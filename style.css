@@ -1,0 +1,84 @@
+:root {
+  --primary-color: lightcoral;
+  --secundary-color: dimgrey;
+  --tertiary-color: gainsboro;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  background-color: var(--primary-color);
+  font-size: 15px;
+  font-family: lato, sans-serif;
+}
+
+#container {
+  background-color: #f7f7f7;
+  height: 525px;
+  width: 360px;
+  margin: auto;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.title{
+  background-color: var(--tertiary-color);
+  color: var(--secundary-color);
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: normal;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  text-align: center;
+}
+
+.tipsForm {
+  padding-left: 20px;
+}
+
+.formInput {
+  background-color: rgba(8, 8, 8, 0.795);
+  margin: 20px;
+  width:80px;
+  padding: 5px 5px 8px 8px; 
+}
+
+.formInput:focus {
+  border: 3px solid var(--primary-color);
+  outline: none;
+}
+
+
+
+.formSelect {
+  width: 180px; 
+  padding: 5px;
+
+}
+
+.formSubmit {
+  background-color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: bolder;
+  display: block;
+  margin: 30px auto;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: lato, sans-serif;
+  font-size: 15px;
+}
+
+.formSubmit:hover {
+  background-color: rgba(255, 182, 193, 0.589);
+}
+
+#totalTip {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+}

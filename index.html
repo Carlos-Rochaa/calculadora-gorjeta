@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora gorjetas</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div>
+        <h1 class="title">Calculadora de gorjetas</h1>
+    </div>
+    <div class="formulario">
+      <form class="tipsForm" id="tipsForm">
+        <label for="bill">
+          <p>Qual foi o valor da conta</p>
+        </label>
+        <p>
+          R$ <input type="number" required  class="formInput" min="0" class="bill" id="bill" placeholder="Ex: 100" autocomplete="off">
+        </p>
+        <label for="serviceQuality">
+          <p>Como foi o seu serviço?</p>
+        </label>
+          <p>
+            <select name="serviceQuality" required class="formSelect" id="serviceQuality">
+              <option disabled selected value="0">---Escolha um opção---</option>
+              <option value="0.3">30% - Serviço incrível</option>
+              <option value="0.2">20% - Bom serviço</option>
+              <option value="0.1">10% - Serviço aceitável</option>
+              <option value="0">0% - Não gostei do serviço</option>
+            </select>
+          </p>
+          <label for="division">
+            <p>Quantas pessoas irão dividir a conta?</p>
+          </label>
+          <p>
+            <input type="number" required class="formInput" min="0" class="division" id="division" placeholder="Ex: 1" > pessoa(s)
+          </p>
+          <button type="submit" class="formSubmit">Calcular</button>
+      </form>
+    </div>
+    <div id="totalTip">
+      Gorjeta total: 
+      R$ <span id="tip"> 0.00</span>
+      <p id="each">cada</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
